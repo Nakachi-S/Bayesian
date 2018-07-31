@@ -16,9 +16,9 @@ import scipy.stats
 
 
 print("ロジスティック分布か、コーシー分布、どっちを表示させたい？\nlogistic or cauchy?")
-selct = input()
+select = input()
 
-if selct == "logistic":
+if select == "logistic":
     nbins = 50
 
     # ロジスティック分布のパラメータ
@@ -53,7 +53,7 @@ if selct == "logistic":
     
     plt.show()
 
-elif selct == "cauchy":
+elif select == "cauchy":
     nbins = 50
 
     # コーシー分布のパラメータ

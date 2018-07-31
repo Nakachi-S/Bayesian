@@ -53,19 +53,19 @@ print (u"理論的な受理率: %f" % (1.0 / M))
 # 目標分布を描画
 x = np.linspace(0.0, 1.0, 1000)
 y = f(x)
-plt.plot(x, y, 'r-', lw=2)
+plt.plot(x, y, 'r-', lw=2, label='Beta')
 
 # 提案分布（一様分布）を描画
 y = M * uniform.pdf(x)
-plt.plot(x, y, 'g-', lw=2)
+plt.plot(x, y, 'g-', lw=2, label='Uniform')
 
 # 受理した乱数の分布を描画
 plt.hist(X, bins=50, normed=True)
-
+plt.legend()
 plt.show()
 
 
-
+#############################################
 # 受理されたサンプルと棄却されたサンプルを描く
 # 点の数が多すぎるのでNsimを小さくした
 
