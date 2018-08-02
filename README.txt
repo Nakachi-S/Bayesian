@@ -11,5 +11,7 @@ http://aidiary.hatenablog.com/entry/20140620/1403272044
 06_monte.py	モンテカルロ積分
 07_monte.py	重点サンプリング(2)
 
+ベイズ計算統計学のP76, 例3.5を実装したプログラム。
+random_walk.py
 
 
